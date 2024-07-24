@@ -232,9 +232,10 @@ nav a{
 .bmi-cal{
     background-color: rgb(255, 255, 255,20%);
     margin: 0%;
-    padding: 5% 10% 0% 10%;
+    padding: 2% 10% 0% 10%;
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    height: 430px;
 }
 
 .cal-chart td ,th{
@@ -256,22 +257,30 @@ nav a{
 /* BMI form */
 form{
     display: grid;
-    grid-template-areas:
-     "input input"
-     "input"
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.full-row{
+    grid-column: span 2;
+}
+input::placeholder{
+    color:rgb(255, 255, 255,60%);
 
-     ;
 }
-input, option{
-    color:rgb(255, 255, 255,10%);
+input , select{
+    background-color: #2b2b2b;
+    padding: 13px 10px 10px 10px;
+    border-radius: 10px;
+    border: none;
+    color:rgb(255, 255, 255,60%);
 }
+
 .btn-cal{
-    padding: 3% 12% 3% 12%;
+    padding: 1% 5% 1% 5%;
     font-size: 20px;
     border-radius: 25px;
     border: none;
     background-color: #E6533C;
     color: white;
-    margin-top: 5px;
 }
 
