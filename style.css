@@ -2,6 +2,8 @@
 body{
     background-color: #000000;
     color: white;
+    margin: 0%;
+    padding: 0%;
 }
 .primary-color{
     color: #E6533C;
@@ -331,15 +333,12 @@ input , select{
 }
 
 @media screen and (max-width: 576px) {
-    body{
-        margin: 0% 2% 0% 2%;
-    }
     /* header section  */
     .navbar{
         display: flex;
         justify-content: space-between; 
         align-items:center;
-        margin: 0% 5% 0% 5%;
+        margin: 0% 3% 0% 3%;
     }
     .nav-menu{
         display: none;
@@ -357,7 +356,7 @@ input , select{
     .banner{
         flex-direction: column;
         overflow: hidden;
-        margin: 0% 5% 0% 7%;
+        margin: 0% 3% 0% 3%;
     }
     .banner-col1{
         width: 100%;
@@ -431,6 +430,7 @@ input , select{
     .habits{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        margin: 0% 3% 0% 3%;
     }
     .habit-title{
         display: block;
@@ -441,6 +441,7 @@ input , select{
         display: flex;
         flex-direction: column;
         gap: 5%;
+        margin: 0% 3% 0% 3%;
     }
     .runSectionImg img{
         width: 280px;
@@ -455,5 +456,31 @@ input , select{
     .runSectionTitle{
         display: block;
         font-size: 1.7rem;
+    }
+    /* BMI section */
+    .bmi-head{
+        padding:0% ;
+        margin: 0% 3% 0% 3%;
+    }
+    .bmi-headTitle{
+        font-size: 1.7rem;
+    }
+    .bmi-cal{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        height: auto;
+        padding:5%;
+    }
+    .cal-chart  table{
+        width: 100%;
+        height: auto;
+    }
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+    }
+    .btn-cal {
+        padding: 2% 5% 2% 5%;
+        width: 50%;
     }
 }
