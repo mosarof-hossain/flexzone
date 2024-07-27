@@ -306,6 +306,9 @@ input , select{
 .meet{
     margin: 5% 10% 5% 10%;
 }
+.meet-title, .meet-des{
+    text-align: center;
+}
 .meet-card{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -316,14 +319,23 @@ input , select{
     padding: 2% 1% 2.5% 1% ;
     
 }
+.meet-cardImg{
+    position: relative;
+    overflow: hidden;
+}
 .meet-cardImg img{
     width: 100%;
     height: 42vh;
     border-radius: 10px;
     display: block;
 }
-.meet-title, .meet-des{
-    text-align: center;
+.caption{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+}
+.caption-title{
+    margin-bottom: -10%;
 }
 
 
@@ -482,5 +494,15 @@ input , select{
     .btn-cal {
         padding: 2% 5% 2% 5%;
         width: 50%;
+    }
+    /* Meet section */
+    .meet{
+        margin: 0% 3% 0% 3%;
+    }
+    .meet-card{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        padding: 3% 3% 3% 3% ;
+        
     }
 }
