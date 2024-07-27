@@ -21,11 +21,13 @@ body{
     font-family: 'Miama Nueva', sans-serif;
 }
 .section-title{
+    font-family: "Inter", sans-serif;
     font-size: 50px;
     color: white;
 }
 .section-des{
-    font-size: 25px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
     color: rgb(247, 244, 244,30%);
     margin-bottom: 30px;
 }
@@ -90,8 +92,7 @@ span.miama-design{
     display:block;
 }
 .banner-des{
-    text-align: left justify;
-    font-size: 1rem;
+    text-align: justify;
     margin:-5% 0% 3% 0%;
 }
 .banner-btn{
@@ -197,6 +198,7 @@ span.miama-design{
 .habit-des{
    margin-top: -10px;
    text-align: center;
+   color: rgb(247, 244, 244,30%);
 }
 
 /* Run Section design */
@@ -231,6 +233,9 @@ span.miama-design{
 .runSectionTitle{
     margin:0px;
     position: relative;
+}
+.mile-easily{
+    display:block;
 }
 
 /* BMI calculator section design */
@@ -426,5 +431,29 @@ input , select{
     .habits{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
+    .habit-title{
+        display: block;
+        font-size: 1.7rem;
+    }
+    /* run section */
+    .run{
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+    }
+    .runSectionImg img{
+        width: 280px;
+        height: auto;
+        margin-top: 5%;
+        
+    }
+    .btn-run{
+        width: 94%;
+        padding: 5% 2%;
+    }
+    .runSectionTitle{
+        display: block;
+        font-size: 1.7rem;
     }
 }
