@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fitness</title>
+    <title>FlexZone</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
 </head>
 <body>
     <header>
+        <!-- header navbar start -->
         <section class="header">
             <nav class="navbar">
                 <div class="navbar-title"><p class="web-name inter-font primary-color">FlexZone</p></div>
@@ -27,11 +28,15 @@
                 </div>
             </nav>
         </section>
-        <!-- section.banner>.banner-content>.banner-col1{.banner-title+.banner-des+.banner-btn{button.btn-club+button.btn-down}}+.banner-col2{.col2-item1+.col2-item2} -->
+        <!-- banner section start -->
         <section class="banner">
                 <div class="banner-col1">
-                    <div class="banner-title inter-font"><h3>Get body in  <span class="miama">shape</span>  & stay healthy</h3></div>
-                    <div class="banner-des secondary-color">Fitness encompasses physical, mental, and sometimes even spiritual well-being. It's about maintaining a healthy lifestyle through regular exercise, balanced nutrition, and adequate rest. Here are some key aspects of fitness.</div>
+                    <div class="banner-title inter-font">
+                        <h3>Get body in  <span class="miama-design"><em class="miama">shape</em>& stay</span> healthy</h3>
+                    </div>
+                    <div class="banner-des secondary-color inter-font">
+                        <p>Fitness encompasses physical, mental, and sometimes even spiritual well-being. It's about maintaining a healthy lifestyle through regular exercise, balanced nutrition, and adequate rest. Here are some key aspects of fitness.</p>
+                    </div>
                     <div class="banner-btn">
                         <a href=""><button class="btn-join bg-primary inter-font">Join Club Now!</button></a>
                         <a href=""><button class="btn-down inter-font">Download App</button></a>
@@ -40,21 +45,21 @@
                 <div class="banner-col2">
                     <img src="assets/images/img5.png" alt="">
                     <div class="gradient-top">
-                        <h2 class="inter-font">500+</h2>
-                        <p class="secondary-color">Free Workout Videos</p>
+                        <h2 class="inter-font f5">500+</h2>
+                        <p class="secondary-color inter-font fw">Free Workout Videos</p>
                     </div>
                     <div class="gradient-bottom">
                         <button class="btn-circle bg-primary"></button>
                         <div class="gra-content">
-                            <h2 class="inter-font">350+</h2>
-                            <p class="secondary-color">Video Tutorials</p>
+                            <h2 class="inter-font f5">350+</h2>
+                            <p class="secondary-color fw">Video Tutorials</p>
                         </div>
-
                     </div>
                 </div>
         </section>
     </header>
     <main>
+        <!-- habit change section design start -->
         <section class="habit-change">
             <h2 class="habit-title section-title">Change Your Habits</h2>
             <p class="habit-topDes section-des">We believe fitness should be accessible to everyone, everywhere, regardless of income or
@@ -88,7 +93,7 @@
             
         </section>
         <!-- Run Section Start -->
-         <section class="run">
+         <section class="run hide">
             <div class="runS1">
                 <h2 class="runSectionTitle section-title">Run an Extra Mile Easily</h2>
                 <p class="runSectionDes section-des">We believe fitness should be accessible to everyone,
@@ -101,12 +106,12 @@
             </div>
          </section>
          <!-- BMI Section  Design Start-->
-         <section class="bmi-head">
+         <section class="bmi-head hide">
             <h2 class="bmi-headTitle section-title">BMI Calculator</h2>
             <p class="bmi-headDes section-des">We believe fitness should be accessible to everyone, everywhere, regardless of income or
                 access to a gym.</p>
          </section>
-         <section class="bmi-cal">
+         <section class="bmi-cal hide">
             <div class="cal-chart">
                 <h3 class="cal-Title">BMI Calculator Chart</h3>
                 <table>
@@ -160,9 +165,8 @@
                 <a href="#" class="btnCal"><button class="btn-cal inter-font" >Calculate</button></a>
             </div>
          </section>
-         <!-- BMI Section  Design End-->
-          <!-- Meet Section Design Start -->
-            <section class="meet">
+        <!-- Meet Section Design Start -->
+            <section class="meet hide">
                 <h2 class="meet-title section-title">Meet Our Team</h2>
                 <p class="meet-des section-des">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
                 <div class="meet-card">

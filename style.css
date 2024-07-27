@@ -72,66 +72,63 @@ nav a{
 .banner{
     display: flex;
     justify-content: space-between;
-    margin: 3% 10% 0% 10%;
+    margin: 0% 10% 0% 10%;
     position: relative;
     height: auto;
     
 }
-.banner-title{
-    font-size: 60px;
-    text-wrap: wrap;
-    margin-top: -5%;
-}
-.banner-des{
-    text-align: left justify;
-    font-size: 20px;
-}
 .banner-col1{
     display: flex;
     flex-direction: column;
-    gap: 7%;
     width: 50%;
     height: auto;
 }
+.banner-title{
+    font-size: 3.5rem;
+}
+span.miama-design{
+    display:block;
+}
+.banner-des{
+    text-align: left justify;
+    font-size: 1rem;
+    margin:-5% 0% 3% 0%;
+}
+.banner-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:15%;
+}
 
+.btn-join{
+    padding: 9% 7.5% 9% 6.5%;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+    width: 140%;
+    color: white;
+}
+.btn-down{
+    padding: 9% 7.5% 9% 6.5%;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+    width: 140%;
+    background-color: #000000;
+    border: 1px solid rgb(247, 244, 244,10%);
+    color: white;
+}
 .banner-col2{
     position: relative;
     display: inline-block;
     padding-right: 7%;
 }
 .banner-col2 img{
+    padding-left: 17%;
     width: 100%;
     height: auto;
 }
-
-.gradient-top{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    position:absolute;
-    left: 230px;
-    top: 130px;
-    border-radius: 10px;
-    width: 32%;
-    height: 10%;
-    padding: 2%;
-    background: linear-gradient(to bottom,rgb(255, 255, 255,20%),rgb(255, 255, 255,20%));
-  }
-  .gradient-bottom {
-    display: flex;
-    align-items: center;
-    position:absolute;
-    right: 80%;
-    bottom:12%;
-    border-radius: 10px;
-    width: 35%;
-    height: 10%;
-    padding: 2% 3% 2% 3%;
-    background-color:  rgb(255, 255, 255,10%);
-    backdrop-filter: blur(5px);
-  }
-  
 .btn-circle{
     height: 40px;
     width: 40px;
@@ -139,28 +136,39 @@ nav a{
     border: none;
     margin-right: 5%;
 }
+.gradient-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    position:absolute;
+    left: 18rem;
+    top: 130px;
+    border-radius: 10px;
+    width: auto;
+    text-wrap: nowrap;
+    height: 12%;
+    padding: 2%;
+    background: linear-gradient(to bottom,rgb(255, 255, 255,20%),rgb(255, 255, 255,20%));
+  }
+  .fw{
+    margin-top: -5%;
+  }
+  .gradient-bottom {
+    display: flex;
+    align-items: center;
+    position:absolute;
+    right: 17.5rem;
+    bottom:12%;
+    border-radius: 10px;
+    width: 40%;
+    height: 12%;
+    padding: 2% 3% 2% 3%;
+    background-color:  rgb(255, 255, 255,10%);
+    backdrop-filter: blur(5px);
+  }
 
-.inter-font{
-    margin-bottom: -5%;
-}
-
-.btn-join{
-    padding: 3% 7% 3% 7%;
-    font-size: 20px;
-    border-radius: 25px;
-    border: none;
-    color: white;
-    margin-right: 1.5%;
-}
-.btn-down{
-    padding: 3% 7% 3% 7%;
-    font-size: 20px;
-    border-radius: 25px;
-    border: none;
-    background-color: #000000;
-    border: 1px solid rgb(247, 244, 244,10%);
-    color: white;
-}
+  
 
 /* Habits Section design */
 .habit-change{
@@ -190,6 +198,7 @@ nav a{
    margin-top: -10px;
    text-align: center;
 }
+
 /* Run Section design */
 .run{
     margin: 5% 10% 0% 10%;
@@ -223,6 +232,7 @@ nav a{
     margin:0px;
     position: relative;
 }
+
 /* BMI calculator section design */
 .bmi-head{
     margin: 5% 10% 0% 10%;
@@ -254,6 +264,7 @@ nav a{
     margin-bottom: 7%;
     font-weight: bolder;
 }
+
 /* BMI form */
 form{
     display: grid;
@@ -306,4 +317,114 @@ input , select{
 }
 .meet-title, .meet-des{
     text-align: center;
+}
+
+
+/* Responsive Part Design */
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    body{
+        margin: 0% 2% 0% 2%;
+    }
+    /* header section  */
+    .navbar{
+        display: flex;
+        justify-content: space-between; 
+        align-items:center;
+        margin: 0% 5% 0% 5%;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .menu-icon::after{
+        font-family: 'Font Awesome 6 Free';
+        content: "\f0c9";
+        font-weight:bolder;
+    }
+    .web-name{
+        font-size: 30px;
+    }
+
+    /* banner section */
+    .banner{
+        flex-direction: column;
+        overflow: hidden;
+        margin: 0% 5% 0% 7%;
+    }
+    .banner-col1{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .banner-des{
+        text-align: left justify;
+        font-size: 1rem;
+    }
+    .banner-btn{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:15%;
+    }
+    
+    .btn-join{
+        padding: 9% 7.5% 9% 6.5%;
+        font-size: 1rem;
+        width: 130%;
+    }
+    .btn-down{
+        padding: 9% 7.5% 9% 6.5%;
+        font-size: 1rem;
+        width: 130%;
+    }
+    span.miama-design{
+        display:block;
+    }
+
+    .banner-col2{
+        position: relative;
+        display: inline-block;
+    }
+    .banner-col2 img{
+        padding: 0%;
+        width: auto;
+        height: auto;
+        clip-path: inset(0 0 65px 0);
+    }
+    .gradient-top{
+        left: 12rem;
+        top: 85px;
+        width: auto;
+        height: 10%;
+        padding: 1%;
+      }
+      .fw{
+        margin-top: -5%;
+        font-size: .7rem;
+      }
+      .f5{
+        font-size: large;
+      }
+      .btn-circle{
+        height: 30px;
+        width: 30px;
+        margin-right: 2%;
+    }
+      .gradient-bottom {
+        right: 12rem;
+        bottom:41%;
+        width: auto;
+        text-wrap: nowrap;
+        height: 8%;
+      }
+      
+    /* habit section */
+    .habits{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
