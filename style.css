@@ -337,7 +337,12 @@ input , select{
 .caption-title{
     margin-bottom: -10%;
 }
-
+/* Footer Section Design  */
+.footer-section{
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: space-around;
+}
 
 /* Responsive Part Design */
 .hide{
