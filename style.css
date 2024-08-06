@@ -343,10 +343,31 @@ footer{
 }
 .footer-top{
     display: grid;
-    margin: 5% 10% 0% 10%;
-    padding: 2% 1%;
-    gap: 102px;
-    grid-template-columns: repeat(3,500px);
+    grid-template-columns: 50% 22% auto;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5% 10% 0% 8.5%;
+}
+.footer-col1{
+    margin-right: 105px;
+}
+.footer-col1Title{
+    font-weight:bolder;
+    font-size: 50px;
+    font-style: italic;
+    
+}
+.footer-col2Title{
+    font-family: "Inter", sans-serif;
+    font-size: 35px;
+}
+.footer-col2 ul{
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;;
+    color: rgb(255, 255, 255,25%);
+    padding: 0;
 }
 .footer-bottom{
     margin: 1% 10% 0% 10%;
@@ -354,6 +375,11 @@ footer{
 }
 .footer-bottomDes{
     text-align: center;
+    color:rgb(255, 255, 255,25%);
+    font-size: 1.4rem;
+}
+.footer-bottom hr{
+    border: 1px solid rgb(255, 255, 255,25%);
 }
 
 /* Responsive Part Design */
@@ -521,5 +547,12 @@ footer{
         grid-template-columns: repeat(1,100%);
         padding: 3% 3% 3% 3% ;
         
+    }
+    /* footer section */
+    .footer-top{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10%;
     }
 }
