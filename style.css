@@ -70,6 +70,8 @@ nav a{
     border-radius: 15px;
     padding: 5px 15px;
     font-size: 18px ;
+    font-weight: bold;
+    color: white;
 }
 
 /* banner design */
@@ -506,11 +508,13 @@ footer{
         display: none;
       }
       .youtube-play::after{
-        content: "\f167";
-        font-family: 'Font Awesome 6 Brands';
-        color: #E6533C;
+        content: "\f144";
+        font-family: 'FontAwesome';
         font-size: 30px;
         margin-right: 20px;
+        font-style:normal;
+        
+        border-radius: 50%;
         
     }
       .gradient-bottom {
