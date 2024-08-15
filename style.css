@@ -316,7 +316,7 @@ input , select{
     border-radius: 10px;
     row-gap: 1.9%;
     column-gap: 1%;
-    padding: 1.5% 5% 2% .5% ;
+    padding: 1.5% 1.5% .7% 1.5% ;
     
 }
 
@@ -333,7 +333,7 @@ input , select{
 }
 .meet-cardInner{
     transform-style: preserve-3d;
-    transition: transform 1.2s ease-out;
+    transition: transform 1.5s ease-out;
 }
 .meet-cardImg:hover .meet-cardInner{
     transform: rotateY(180deg);
@@ -579,8 +579,9 @@ footer{
     .meet-card{
         display: grid;
         grid-template-columns: repeat(1,100%);
-        padding: 3% 3% 3% 3% ;
-        height: 280vh;
+        padding: 3% 3% 1% 3% ;
+        height: 288vh;
+        gap: .5px;
         
     }
     /* footer section */
