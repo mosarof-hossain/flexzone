@@ -503,9 +503,15 @@ footer{
         font-size: large;
       }
       .btn-circle{
-        height: 30px;
-        width: 30px;
-        margin-right: 2%;
+        display: none;
+      }
+      .youtube-play::after{
+        content: "\f167";
+        font-family: 'Font Awesome 6 Brands';
+        color: #E6533C;
+        font-size: 30px;
+        margin-right: 20px;
+        
     }
       .gradient-bottom {
         right: 12rem;
@@ -533,13 +539,13 @@ footer{
         margin: 0% 3% 0% 3%;
     }
     .runSectionImg img{
-        width: 280px;
+        width: 300px;
         height: auto;
         margin-top: 5%;
         
     }
     .btn-run{
-        width: 94%;
+        width: 91%;
         padding: 5% 2%;
     }
     .runSectionTitle{
@@ -584,6 +590,12 @@ footer{
         gap: .5px;
         
     }
+    .meet-cardInner{
+        transform-style: preserve-3d;
+        transition: transform 1.5s ease-in-out;
+    }
+
+
     /* footer section */
     .footer-top{
         display: flex;
