@@ -62,7 +62,7 @@ nav a{
     gap: 15%;
     border: 1px solid rgb(255, 255, 255,10%);
     border-radius: 20px;
-    width: 500px;
+    width: 550px;
     padding:1%;
 }
 .btn-home{
@@ -72,6 +72,7 @@ nav a{
     font-size: 18px ;
     font-weight: bold;
     color: white;
+    margin-left: -10%;
 }
 
 /* banner design */
@@ -151,12 +152,15 @@ span.miama-design{
     border-radius: 10px;
     width: auto;
     text-wrap: nowrap;
-    height: 12%;
+    height: 11%;
     padding: 2%;
     background: linear-gradient(to bottom,rgb(255, 255, 255,20%),rgb(255, 255, 255,20%));
   }
   .fw{
-    margin-top: -5%;
+    margin-top: -18%;
+  }
+  .fw1{
+    margin-top: -12%;
   }
   .gradient-bottom {
     display: flex;
@@ -165,7 +169,7 @@ span.miama-design{
     right: 17.5rem;
     bottom:12%;
     border-radius: 10px;
-    width: 40%;
+    width: 35%;
     height: 12%;
     padding: 2% 3% 2% 3%;
     background-color:  rgb(255, 255, 255,10%);
@@ -498,11 +502,18 @@ footer{
         padding: 1%;
       }
       .fw{
-        margin-top: -5%;
+        margin-top: -20%;
+        font-size: .7rem;
+      }
+      .fw1{
+        margin-top: -10%;
         font-size: .7rem;
       }
       .f5{
         font-size: large;
+      }
+      .gra-content{
+        margin-left: -5%;
       }
       .btn-circle{
         display: none;
@@ -511,9 +522,9 @@ footer{
         content: "\f144";
         font-family: 'FontAwesome';
         font-size: 30px;
+        color: #E6533C;
         margin-right: 20px;
         font-style:normal;
-        
         border-radius: 50%;
         
     }
@@ -545,8 +556,7 @@ footer{
     .runSectionImg img{
         width: 300px;
         height: auto;
-        margin-top: 5%;
-        
+        margin-top: 5%; 
     }
     .btn-run{
         width: 91%;
